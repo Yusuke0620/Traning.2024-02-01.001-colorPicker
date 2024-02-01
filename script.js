@@ -1,5 +1,6 @@
 document.querySelector("#colorText").textContent = "カラーコード:";
 document.querySelector("#colorPicker").value;
+
 document.querySelector("#colorText").textContent = `カラーコード: ${document.querySelector("#colorPicker").value}`;
 
 // 定数定義
@@ -9,10 +10,16 @@ const color = document.querySelector("#colorPicker");
 text.textContent = `カラーコード: ${color.value}`;
 console.log(text);
 
-// 現在のカラーコード発動させる関数
+
 const colorBg = () => {
+    // 現在のカラーコードを背景色で発動させる関数
+    document.body.style.backgroundColor = color.value;
+
+    // 現在のカラーコード発動させる関数
     text.textContent = `カラーコード: ${color.value}`;
 }
 
+
+/* 背景色を変える */
 // カラーピッカーが変更されたらカラーコード表示
 color.addEventListener("input", colorBg);
