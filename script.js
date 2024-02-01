@@ -23,3 +23,14 @@ const colorBg = () => {
 /* 背景色を変える */
 // カラーピッカーが変更されたらカラーコード表示
 color.addEventListener("input", colorBg);
+
+
+
+
+/* testteet */
+const testBg = () => {
+    // testクラスの背景色をオレンジ色に変更
+    document.querySelector(".test").style.backgroundColor = "orange";
+}
+// testクラス内をクリックしたときに
+document.querySelector(".test").addEventListener("click", testBg);
